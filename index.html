@@ -19,8 +19,8 @@
                 <div class="line" id="line3"></div>
                 <span>fechar</span>
             </div>
-            <header>
-                <div class="img-weapper">
+            <header id="home1">
+                <div class="img-weapper" id="home2">
                     <img src="imagens/BG.jpg" alt="">  
                 </div>
                 <div class="banner">
@@ -32,11 +32,11 @@
             <aside class="sidebar">
                 <nav>
                     <ul class="menu">
-                        <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Conhecimentos</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Contatos</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
+                        <li class="menu-item"><a href="#home2" class="menu-link">Home</a></li>
+                        <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimentos</a></li>
+                        <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                        <li class="menu-item"><a href="#contato" class="menu-link">Contatos</a></li>
+                        <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
                     </ul>
                 </nav>
                 <div class="social-media">
@@ -45,7 +45,7 @@
                     <a href=""><i class="fab fa-twitter"></i></a>
                 </div>
             </aside>
-            <section class="sessao-conhecimentos">
+            <section class="sessao-conhecimentos" id="conhecimentos">
                 <div class="sessao-header">
                     <h1>Conhecimentos</h1>
                 </div>
@@ -109,7 +109,7 @@
                     </div>
                 </div>
             </section>
-            <section class="sessao-projetos">
+            <section class="sessao-projetos" id="projetos">
                 <div class="sessao-header">
                     <h1>Projetos</h1>
                 </div>
@@ -152,7 +152,7 @@
                 </div>
             </section>
 
-            <section class="sessao-contato">
+            <section class="sessao-contato" id="contato">
                 <div class="contato-wrapper">
                     <div class="contato-left">
                         <div class="contato-img">
@@ -180,12 +180,15 @@
                 </div>
             </section>
 
-            <section class="sessao-orcamento">
+            <section class="sessao-orcamento" id="orcamento">
+                <div class="orcamento-img">
+                    <img src="imagens/thalia-tran-d1Wj9qU5C-o-unsplash.jpg" alt="imagem agencia pro max">
+                </div>
                 <div class="orcamento-wrapper">
-                    <h1>Faça um Orçamento conosco</h1>
+                    <h1>Faça um Orçamento conosco!</h1>
                     <form action="">
                         <label for="quantidade">Quantidade de páginas</label>
-                        <input type="text" name="quantidade" id="quantidade">
+                        <input type="number" min="1" name="quantidade" id="quantidade">
                         <label for="js">Preciso de um script JS</label>
                         <input type="checkbox" name="js" id="js">
                         <label>Layout</label>
@@ -200,11 +203,30 @@
                             </div>
                         </div>
                         <label for="prazo">Prazo</label>
-                        <input type="range" name="prazo" id="prazo">
-                        <button class = "btn btn.orcamento" type="submit">Enviar</button>
-                    </form>
+                        <input type="range" name="prazo" id="prazo" min="1" max="10">
+                        <label id="preco">R$ 0,00</label>
+                        <button class="btn btn-orcamento" type="submit">Enviar</button>
+                    </form>     
                 </div>
             </section>
+
+            <footer>
+                <div class="footer-content">
+                    <p>
+                        Copyright &copy; 2021, IAN MATHEUS - Todos os direitos reservados
+                    </p>
+                    <div class="social-list">
+                        <ul>
+                            <li class="ul"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="ul"><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li class="ul"><a href=""><i class="fab fa-twitter"></i></a></li>                           
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+            <a href="#home1" id="link-topo">
+                <i class="fas fa-arrow-up"></i>
+            </a>
       </div>
 </body>
     <script src="script.js"></script>
