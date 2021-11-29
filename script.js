@@ -27,7 +27,6 @@ function atualizarPreco(){
 
     if(temJS) preco *= 1.1 //mais 10%
     if (inclueLayout) preco += 500 
-    
 
     document.querySelector("#preco").innerHTML = `R$ ${preco.toFixed(2)}`
 }
