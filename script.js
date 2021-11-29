@@ -21,9 +21,6 @@ function atualizarPreco(){
     const inclueLayout = document.querySelector("#layout-sim").checked
     const prazo = document.querySelector("#prazo").value
 
-
-
-
     let preco = qtde * 100;
     let taxaUrgencia = 1 - prazo*0.1
     preco = preco + (preco*taxaUrgencia)
